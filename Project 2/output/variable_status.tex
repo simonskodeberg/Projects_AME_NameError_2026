@@ -1,0 +1,92 @@
+\begin{tabular}{lll}
+\toprule
+                                & status   & label                                                                    \\
+\midrule
+ code                           & kept     & World Bank country code                                                  \\
+ marketref                      & kept     & Index of market reforms (1960)                                           \\
+ dem                            & kept     & Democracy measure by ANRR                                                \\
+ demCGV                         & dropped  & Democracy measure by CGV                                                 \\
+ demBMR                         & dropped  & Democracy measure by BMR                                                 \\
+ demreg                         & kept     & Average democracy in the region*initial regime (leaving own country out) \\
+ lp\_bl                          & dropped  & Percentage of population with at most primary education (Barro-Lee)      \\
+ ls\_bl                          & kept     & Percentage of population with at most secondary education (Barro-Lee)    \\
+ lh\_bl                          & kept     & Percentage of population with tertiary education (Barro-Lee)             \\
+ tropicar                       & kept     & \% land area in geographical tropics                                      \\
+ distcr                         & dropped  & Mean distance to nearest waterway                                        \\
+ distc                          & kept     & mean distance to coast                                                   \\
+ distr                          & kept     & mean distance to river                                                   \\
+ ginv                           & dropped  & Gross investment as a share of GDP                                       \\
+ polity                         & dropped  & Polity (measure of democracy)                                            \\
+ polity2                        & kept     & Polity 2 (measure of democracy)                                          \\
+ landlock                       & kept     & =1 if landlocked                                                         \\
+ yellow                         & kept     & =1 if vector yellow fever present today                                  \\
+ oilres                         & kept     & oil reserves                                                             \\
+ goldm                          & kept     & Natural minerals: gold                                                   \\
+ iron                           & kept     & Natural mineral: iron                                                    \\
+ silv                           & kept     & Natural mineral: silver                                                  \\
+ zinc                           & kept     & Natural mineral: zinc                                                    \\
+ mortality                      & dropped  & mortality measure (deaths per 1000 soldiers) from Appendix Table A2, AJR \\
+ imputedmort                    & dropped  & imputed mortality rate from logem4 measure (=exp(logem4))                \\
+ logem4                         & dropped  & log of mortality rate (IV)                                               \\
+ excolony                       & dropped  & =1 if was colony FLOPS definiti                                          \\
+ lt100km                        & dropped  & amount of territory within 100 km of the coast (McArthur and Sachs)      \\
+ democ1                         & dropped  & democracy in first year of independence                                  \\
+ democ00a                       & dropped  & democracy in 1900                                                        \\
+ cons00a                        & dropped  & constraint on executive in 1900                                          \\
+ currentinst                    & kept     & IFC ease of doing business index/rank, 2012 (** our measure)             \\
+ imr95                          & dropped  & infant mortality rate (1995)                                             \\
+ leb95                          & dropped  & life expectancy at birth (1995)                                          \\
+ malfal                         & kept     & Percentage of population at risk of contracting malaria                  \\
+ uvdamage                       & kept     & Ultraviolet exposure                                                     \\
+ suitavg                        & kept     & Land suitability for agriculture                                         \\
+ pdiv                           & kept     & Predicted genetic diversity                                              \\
+ pdiv\_aa                        & kept     & Predicted genetic diversity (ancestry adjusted)                          \\
+ pdivhmi                        & dropped  & Mobility index-predicted genetic diversity                               \\
+ pdivhmi\_aa                     & dropped  & Mobility index-predicted genetic diversity (ancestry adjusted)           \\
+ pd1                            & dropped  & Population density in 1 CE                                               \\
+ pd1000                         & dropped  & Population density in 1000 CE                                            \\
+ pd1500                         & dropped  & Population density in 1500 CE                                            \\
+ pd1500.1                       & dropped  &                                                                          \\
+ pop1                           & dropped  & Population in 1 CE                                                       \\
+ pop1000                        & dropped  & Population in 1000 CE                                                    \\
+ pop1500                        & dropped  & Population in 1500 CE                                                    \\
+ legor\_uk                       & kept     & British legal origin dummy                                               \\
+ legor\_fr                       & kept     & French legal origin dummy                                                \\
+ temp                           & kept     & Temperature                                                              \\
+ elevavg                        & kept     & Mean elevation                                                           \\
+ elevstd                        & kept     & Standard deviation of elevation                                          \\
+ kgatr                          & kept     & Percentage of population living in tropical zones                        \\
+ precip                         & kept     & Precipitation                                                            \\
+ suitgini                       & kept     & Land suitability Gini                                                    \\
+ area                           & kept     & Total land area                                                          \\
+ abslat                         & dropped  & Absolute latitude                                                        \\
+ cenlong                        & kept     & Geodesic centroid longitude                                              \\
+ area\_ar                        & kept     & Arable land area                                                         \\
+ rough                          & kept     & Terrain roughness                                                        \\
+ ln\_yst                         & kept     & Log [Neolithic transition timing]                                        \\
+ ln\_yst\_aa                      & kept     & Log [Neolithic transition timing (ancestry adjusted)]                    \\
+ africa                         & kept     & Africa dummy                                                             \\
+ europe                         & dropped  & Europe dummy                                                             \\
+ asia                           & kept     & Asia dummy                                                               \\
+ oceania                        & kept     & Oceania dummy                                                            \\
+ americas                       & kept     & Americas dummy                                                           \\
+ pprotest                       & kept     & Share of Protestants in the population                                   \\
+ pcatholic                      & kept     & Share of Roman Catholics in the population                               \\
+ pmuslim                        & kept     & Share of Muslims in the population                                       \\
+ pother                         & dropped  & Share of other religions in the population                               \\
+ population\_initial             & kept     & Population in 1970                                                       \\
+ population\_now                 & dropped  & Population in 2020                                                       \\
+ gdp\_pc\_initial                 & dropped  & GDP per capita in 1970                                                   \\
+ gdp\_pc\_now                     & dropped  & GDP per capita in 2020                                                   \\
+ capital\_growth\_pct\_gdp\_initial & kept     & Gross capital formation in 1970 (\% of GDP)                               \\
+ capital\_growth\_pct\_gdp\_now     & dropped  & Gross capital formation in 2020 (\% of GDP)                               \\
+ gdp\_initial                    & dropped  & GDP in 1970                                                              \\
+ gdp\_now                        & dropped  & GDP in 2020                                                              \\
+ investment\_rate                & kept     & Capital formation (\% of GDP per year, avg. of available years 1970-2020) \\
+ gdp\_growth                     & kept     & Annual growth in GDP per capita, 1970-2020                               \\
+ pop\_growth                     & kept     & Annual growth in population, 1970-2020                                   \\
+ lgdp\_initial                   & kept     & GDP per capita in 1970 (log)                                             \\
+ lpop\_initial                   & dropped  & Population in 1970 (log)                                                 \\
+ constant                       & kept     &                                                                          \\
+\bottomrule
+\end{tabular}
