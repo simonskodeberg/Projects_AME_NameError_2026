@@ -1,13 +1,25 @@
-\begin{tabular}{lrrrr}
+\begin{table}[!htbp]
+\centering
+\caption{Kept versus dropped countries}
+\label{tab:kept_vs_dropped}
+\begin{threeparttable}
+\begin{tabular}{lrrrrr}
 \toprule
-                                &   mean kept &   mean dropped &   n kept &   n dropped \\
+                                &   Mean in kept countries &   Mean in dropped countries &   Country kept &   Country dropped &   p-value \\
 \midrule
- gdp\_growth                     &       0.016 &          0.015 &       67 &          35 \\
- lgdp\_initial                   &       7.979 &          7.845 &       67 &          42 \\
- pop\_growth                     &       0.017 &          0.017 &       67 &         131 \\
- investment\_rate                &      22.523 &         24.38  &       67 &         112 \\
- lh\_bl                          &       3.18  &          3.557 &       67 &          76 \\
- ls\_bl                          &      12.982 &         17.642 &       67 &          76 \\
- capital\_growth\_pct\_gdp\_initial &      21.306 &         22.272 &       67 &          30 \\
+ gdp\_growth                     &                    0.016 &                       0.015 &             67 &                35 &     0.82  \\
+ lgdp\_initial                   &                    7.979 &                       7.468 &             67 &                35 &     0.072 \\
+ pop\_growth                     &                    0.017 &                       0.018 &             67 &                35 &     0.689 \\
+ investment\_rate                &                   22.523 &                      23.885 &             67 &                32 &     0.328 \\
+ lh\_bl                          &                    3.18  &                       1.339 &             67 &                21 &     0.003 \\
+ ls\_bl                          &                   12.982 &                       7.269 &             67 &                21 &     0.015 \\
+ capital\_growth\_pct\_gdp\_initial &                   21.306 &                      23.899 &             67 &                18 &     0.392 \\
 \bottomrule
 \end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Note:} Mean of each variable and number of countries that observe it, for countries in the final sample (kept) and the other countries in the trimmed sample, which observe both $g_i$ and $y_{i0}$ (dropped). The p-value is from a two-sided Welch t-test of equal means in the two groups (unequal variances).
+\item \textit{Source:} Own calculations based on provided growth data.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
