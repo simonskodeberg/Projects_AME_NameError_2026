@@ -1,0 +1,34 @@
+\begin{table}[!htbp]
+\centering
+\caption{Post double Lasso and post partialling out Lasso estimates of $\beta$}
+\label{tab:pdl_ppol_est}
+\begin{threeparttable}
+\begin{tabular}{lcc}
+\toprule
+ & \multicolumn{2}{c}{Annual growth in GDP p.c. (\%)} \\
+\cmidrule(lr){2-3}
+ & Post double Lasso & Post partialling out Lasso \\
+ & $\check{\beta}$ & $\breve{\beta}$ \\
+\midrule
+Log GDP p.c. in 1970 & $-$0.163 & $-$0.166 \\
+ & (0.154) & (0.154) \\
+\addlinespace
+95\% confidence interval & [$-$0.465, 0.140] & [$-$0.468, 0.137] \\
+\midrule
+Penalty $\hat{\lambda}$, growth on initial GDP and controls & 1.105 & -- \\
+Penalty $\hat{\lambda}$, growth on controls & -- & 1.103 \\
+Penalty $\hat{\lambda}$, initial GDP on controls & 0.963 & 0.963 \\
+Selected controls, growth equation & 0 & 0 \\
+Selected controls, initial GDP equation & 1 & 1 \\
+\midrule
+Observations (countries) & 67 & 67 \\
+Candidate controls & 48 & 48 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Note:} Post double Lasso ($\check{\beta}$) and post partialling out Lasso ($\breve{\beta}$) estimates of $\beta$ in $g_i = \beta y_{i0} + \mathbf{z}_i\boldsymbol{\gamma} + u_i$. BCCH penalties ($c=1.1$, $\alpha=0.05$) on standardized regressors. Heteroskedasticity-robust standard errors in parentheses. $^{*}p<0.1$, $^{**}p<0.05$, $^{***}p<0.01$, for tests against zero.
+\item \textit{Source:} Own calculations based on provided growth data.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

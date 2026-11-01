@@ -1,0 +1,43 @@
+\begin{table}[!htbp]
+\centering
+\caption{Variables in the estimation}
+\label{tab:used_variables}
+\begin{threeparttable}
+\begin{tabular}{lp{0.28\linewidth}lp{0.28\linewidth}}
+\toprule
+Variable & \raggedright Label & Variable & \raggedright Label \tabularnewline
+\midrule
+\texttt{lgdp\_initial} & \raggedright GDP per capita in 1970 (log) & \texttt{temp} & \raggedright Temperature \tabularnewline
+\texttt{marketref} & \raggedright Index of market reforms (1960) & \texttt{elevavg} & \raggedright Mean elevation \tabularnewline
+\texttt{dem} & \raggedright Democracy measure by ANRR & \texttt{elevstd} & \raggedright Standard deviation of elevation \tabularnewline
+\texttt{demreg} & \raggedright Average democracy in the region*initial regime (leaving own country out) & \texttt{kgatr} & \raggedright Percentage of population living in tropical zones \tabularnewline
+\texttt{ls\_bl} & \raggedright Percentage of population with at most secondary education (Barro-Lee) & \texttt{precip} & \raggedright Precipitation \tabularnewline
+\texttt{lh\_bl} & \raggedright Percentage of population with tertiary education (Barro-Lee) & \texttt{suitgini} & \raggedright Land suitability Gini \tabularnewline
+\texttt{tropicar} & \raggedright \% land area in geographical tropics & \texttt{cenlong} & \raggedright Geodesic centroid longitude \tabularnewline
+\texttt{distc} & \raggedright Mean distance to coast & \texttt{rough} & \raggedright Terrain roughness \tabularnewline
+\texttt{distr} & \raggedright Mean distance to river & \texttt{ln\_yst} & \raggedright Log [Neolithic transition timing] \tabularnewline
+\texttt{ginv} & \raggedright Gross investment as a share of GDP & \texttt{ln\_yst\_aa} & \raggedright Log [Neolithic transition timing (ancestry adjusted)] \tabularnewline
+\texttt{polity2} & \raggedright Polity 2 (measure of democracy) & \texttt{africa} & \raggedright Africa dummy \tabularnewline
+\texttt{landlock} & \raggedright =1 if landlocked & \texttt{asia} & \raggedright Asia dummy \tabularnewline
+\texttt{yellow} & \raggedright =1 if vector yellow fever present today & \texttt{oceania} & \raggedright Oceania dummy \tabularnewline
+\texttt{goldm} & \raggedright Natural minerals: gold & \texttt{americas} & \raggedright Americas dummy \tabularnewline
+\texttt{iron} & \raggedright Natural mineral: iron & \texttt{pprotest} & \raggedright Share of Protestants in the population \tabularnewline
+\texttt{silv} & \raggedright Natural mineral: silver & \texttt{pcatholic} & \raggedright Share of Roman Catholics in the population \tabularnewline
+\texttt{zinc} & \raggedright Natural mineral: zinc & \texttt{pmuslim} & \raggedright Share of Muslims in the population \tabularnewline
+\texttt{currentinst} & \raggedright IFC ease of doing business index/rank, 2012 (** our measure) & \texttt{investment\_rate} & \raggedright Capital formation (\% of GDP per year, avg. of available years 1970-2020) \tabularnewline
+\texttt{malfal} & \raggedright Percentage of population at risk of contracting malaria & \texttt{pop\_growth} & \raggedright Annual growth in population, 1970-2020 \tabularnewline
+\texttt{uvdamage} & \raggedright Ultraviolet exposure & \texttt{lpop\_initial} & \raggedright Population in 1970 (log) \tabularnewline
+\texttt{suitavg} & \raggedright Land suitability for agriculture & \texttt{larea} & \raggedright Total land area (log) \tabularnewline
+\texttt{pdiv} & \raggedright Predicted genetic diversity & \texttt{larea\_ar} & \raggedright Arable land area (log) \tabularnewline
+\texttt{pdiv\_aa} & \raggedright Predicted genetic diversity (ancestry adjusted) & \texttt{lpop1500} & \raggedright Population in 1500 CE (log) \tabularnewline
+\texttt{legor\_uk} & \raggedright British legal origin dummy & \texttt{loilres} & \raggedright Oil reserves (log of 1 + x) \tabularnewline
+\texttt{legor\_fr} & \raggedright French legal origin dummy &  &  \tabularnewline
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Note:} The regressor $y_{i0}$ and the 48 candidate controls in $\mathbf{z}_i$ left after the selection of controls. Labels from the provided data; the logs of the size variables are constructed in the selection of controls.
+\item \textit{Source:} Own calculations based on provided growth data.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
